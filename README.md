@@ -11,7 +11,7 @@ Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you
 ## Quick Links
 
 - [FFMPEG](https://colortelevision.github.io/kfu/docs/FFMPEG/TBO)
-- [Read the Blog](https://colortelevision.github.io/kfu/blog)
+- [Read the Blog](https://colortelevision.github.io/kfu/docs/FFMPEG/more)
 
 ## About KRIMP UNIVERSITY
 
