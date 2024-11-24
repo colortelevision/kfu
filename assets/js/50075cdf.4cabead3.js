@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkfu=self.webpackChunkkfu||[]).push([[2425],{9007:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Day 1","description":"THIS IS THE NOOBHUB","slug":"/category/day-1","permalink":"/kfu/docs/category/day-1","sidebar":"tutorialSidebar","navigation":{"next":{"title":"GET SHIT ROLLIN\'","permalink":"/kfu/docs/day1/2"}}}}')}}]);
