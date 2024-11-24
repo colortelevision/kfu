@@ -27,6 +27,7 @@ ill k
 
 =======
 - [Explore the Docs](https://colortelevision.github.io/kfu/docs/FFMPEG/TBO)
+- [CREATE GB-STUDIO SFX](https://colortelevision.github.io/kfu/docs/gbs-wavs)
 - [Read the Blog](https://colortelevision.github.io/kfu/blog)
 
 ## About KRIMP UNIVERSITY
