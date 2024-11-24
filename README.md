@@ -15,8 +15,7 @@ Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you
 
 ## About KRIMP UNIVERSITY
 
-KRIMP UNIVERSITY is dedicated to helping you **level up your skills** with accessible and fun resources. Whether you're here for programming tips, life hacks, or just to explore, you're in the right place.
-
+YOU **ATTEMPT** USE A COMPUTER EVERY FUCKIN DAY, NOW ITS TIME TO LEARN HOW
 ---
 
-Start exploring by visiting the [Docs](/docs/intro) or [Blog](/blog). 🎉
+
