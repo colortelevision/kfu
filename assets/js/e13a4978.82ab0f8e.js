@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkfu=self.webpackChunkkfu||[]).push([[3257],{9332:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/kfu/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
