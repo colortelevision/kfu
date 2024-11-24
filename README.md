@@ -1,41 +1,29 @@
-# Website
+---
+id: home
+title: Welcome to KRIMP UNIVERSITY
+slug: /home
+---
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Welcome to KRIMP UNIVERSITY 🎓
 
-### Installation
+> **"GON LEARN YOU SUMN"**
 
-```
-$ yarn
-```
+Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you'll find:
 
-### Local Development
+- 📚 **Tutorials and Guides**: Learn everything step-by-step.
+- 📝 **Blogs**: Stay updated with our latest news and thoughts.
+- 💻 **Code Snippets and Examples**: Get hands-on with practical code.
 
-```
-$ yarn start
-```
+## Quick Links
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- [Explore the Docs](/docs/intro)
+- [Read the Blog](/blog)
+- [Contribute on GitHub](https://colortelevision.github.io/docs24)
 
-### Build
+## About KRIMP UNIVERSITY
 
-```
-$ yarn build
-```
+KRIMP UNIVERSITY is dedicated to helping you **level up your skills** with accessible and fun resources. Whether you're here for programming tips, life hacks, or just to explore, you're in the right place.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+---
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Start exploring by visiting the [Docs](/docs/intro) or [Blog](/blog). 🎉
