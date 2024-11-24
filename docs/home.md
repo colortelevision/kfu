@@ -1,9 +1,3 @@
----
-id: home
-title: Welcome to KRIMP UNIVERSITY
-slug: /home
----
-
 # Welcome to KRIMP UNIVERSITY 🎓
 
 > **"GON LEARN YOU SUMN"**
@@ -16,9 +10,8 @@ Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you
 
 ## Quick Links
 
-- [Explore the Docs](/docs/intro)
-- [Read the Blog](/blog)
-- [Contribute on GitHub](https://colortelevision.github.io/docs24)
+- [Explore the Docs](https://colortelevision.github.io/kfu/docs/FFMPEG/TBO)
+- [Read the Blog](https://colortelevision.github.io/kfu/blog)
 
 ## About KRIMP UNIVERSITY
 
