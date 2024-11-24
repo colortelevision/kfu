@@ -10,7 +10,7 @@ Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you
 
 ## Quick Links
 
-- [Explore the Docs](https://colortelevision.github.io/kfu/docs/intro)
+- [Explore the Docs](https://colortelevision.github.io/kfu/docs/FFMPEG/TBO)
 - [Read the Blog](https://colortelevision.github.io/kfu/blog)
 
 ## About KRIMP UNIVERSITY
