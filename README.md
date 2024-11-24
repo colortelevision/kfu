@@ -2,7 +2,7 @@
 
 > **"GON LEARN YOU SUMN"**
 
-Welcome to the official documentation site for KRIMP UNIVERSITY! Here's what you'll find:
+If .webp and .webm fuck you up, then sit your ass down
 
 - 📚 **Tutorials and Guides**: Learn everything step-by-step.
 - 📝 **Blogs**: Stay updated with our latest news and thoughts.
