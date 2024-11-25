@@ -17,9 +17,9 @@ ENOUGH BEATING AROUND THE SILICON BUSH
 - [FFMPEG CHEAT SHEET](https://colortelevision.github.io/kfu/docs/FFMPEG/TBO)
 - [MORE FFMPEG](https://colortelevision.github.io/kfu/docs/FFMPEG/more)
 - [EEN MORE FFMPEG](https://colortelevision.github.io/kfu/docs/FFMPEG/ffmpeg3)
-- [CREATE GB-STUDIO SFX](https://colortelevision.github.io/kfu/docs/gbs-wavs)
 - [EDIT IMAGE FILES W/ IMAGEMAGICK](https://colortelevision.github.io/kfu/docs/images/imagemagick)
-
+- [CSV FILES](https://colortelevision.github.io/kfu/docs/info/csv)
+- [CREATE GB-STUDIO SFX](https://colortelevision.github.io/kfu/docs/gbs-wavs)
 
 ## About KRIMP UNIVERSITY
 
