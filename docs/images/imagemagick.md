@@ -43,6 +43,15 @@ RESIZE ALL PNG’S TO 25%
 for file in *.png; do sips -Z $(($(sips -g pixelWidth "$file" | awk '/pixelWidth/ {print $2}') / 4)) "$file"; done
 ```
 
+TO AVOID OVERWRITING EXISTING FILES SPECIFY AN OUTPUT DIRECTORY
+```bash
+mkdir -p /path/to/resized
+for img in /path/to/folder/*.jpg; do
+    filename=$(basename "$img")
+    sips --resampleWidth 25% "$img" --out "/path/to/resized/$filename"
+done
+```
+
 DIVIDE PNG INTO SECTIONS OF 64x64
 ```bash
 convert input.png -crop 64x64 +repage +adjoin tile_%d.png
