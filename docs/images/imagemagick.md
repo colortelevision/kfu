@@ -69,3 +69,54 @@ montage @sorted_files.txt -geometry +0+0 -background "#00ff00" composite.png
 # Clean up temporary files
 rm "$tempfile" sorted_files.txt
 ```
+
+CONVERT .PDF TO .PNG
+```bash
+sips -s format png input.pdf --out output.png
+```
+
+ADD 4X WHITE BORDER TO IMAGE
+```bash
+convert input.png -bordercolor white -border 4x4 output.png
+```
+
+SCAN FOR IMAGE TYPE AND CREATE .PDF OF THUMBNAILS
+```bash
+sips -Z 200 *.{jpg,jpeg,png,} --out thumbnails/ && convert thumbnails/*.jpg thumbnails/*.jpeg thumbnails/*.png thumbnails/*.gif output.pdf
+```
+
+CROP ALL .PNG’S TO 500X500
+```bash
+for file in *.png; do convert "$file" -crop 500x500+0+0 "${file%.*}_cropped.png"; done
+```
+CONVERT ALL .JP2’S WITHIN DIRECTORY TO .PNG
+```bash
+find /path/to/folder -name "*.jp2" -exec sips -s format png {} --out {}.png \;
+```
+
+DETERMINE COLOR PALETTE OF PNG
+```bash
+convert input.png +dither -colors 256 -format %c histogram:info:- | awk '{print $NF}'
+```
+ ^ MORE DETAILED OUTPUT
+```bash
+convert yourimage.png +dither -colors 256 -format %c histogram:info:-
+```
+CONVERT ALL PNG’S IN A DIR TO A .PDF
+```bash
+convert *.png output.pdf
+```
+
+SHELL SCRIPT TO COMBINE LAYER OVERLAYS FROM DIRECTORIES HEADS>TAILS
+```bash
+#!/bin/bash
+
+for head in heads/*.png; do
+  for tail in tails/*.png; do
+    head_name="$(basename "$head")"
+    tail_name="$(basename "$tail")"
+    combined_name="${head_name%.*}_${tail_name%.*}.png"
+    convert "$tail" "$head" -composite "combined_images/$combined_name"
+  done
+done
+```

@@ -3,12 +3,12 @@
  **"GON LEARN YOU SUMN"**
 
 
-If .webp and .webm fuck you up, then sit your ass down
+## If .webp and .webm fuck you up, then sit your ass down
 =======
 ENOUGH BEATING AROUND THE SILICON BUSH
 
 - 📚 **Tutorials and Guides**: Learn everything step-by-step.
-- 📝 **Blogs**: Stay updated with our latest news and thoughts.
+- 📝 **Independence**: We give you the tools to be your own boss.
 - 💻 **Code Snippets and Examples**: Get hands-on with practical code.
 
 ## Quick Links
