@@ -18,6 +18,10 @@ ENOUGH BEATING AROUND THE SILICON BUSH
 - [MORE FFMPEG](https://colortelevision.github.io/kfu/docs/FFMPEG/more)
 - [EEN MORE FFMPEG](https://colortelevision.github.io/kfu/docs/FFMPEG/ffmpeg3)
 - [EDIT IMAGE FILES W/ IMAGEMAGICK](https://colortelevision.github.io/kfu/docs/images/imagemagick)
+- [EDIT AUDIO FILES W/ SOX](https://colortelevision.github.io/kfu/docs/audio/sox)
+- [CSV FILES](https://colortelevision.github.io/kfu/docs/info/csv)
+- [CSV FILES](https://colortelevision.github.io/kfu/docs/info/csv)
+- [WINDOWS SUBSYSTEM FOR LINUX](https://colortelevision.github.io/kfu/docs/wsl)
 - [CSV FILES](https://colortelevision.github.io/kfu/docs/info/csv)
 - [CREATE GB-STUDIO SFX](https://colortelevision.github.io/kfu/docs/gbs-wavs)
 
