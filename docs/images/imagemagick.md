@@ -129,3 +129,25 @@ for head in heads/*.png; do
   done
 done
 ```
+
+COUNT GIF FRAMES
+```bash
+identify -format "%n\n" input.gif | head -n 1
+```
+
+EXTRACT FRAMES FROM GIF
+```bash
+convert yourfile.gif frame_%04d.png
+```
+
+CREATE A SOLID COLOR PNG OF A SPECIFIC SIZE
+```
+convert -size 1920x1280 xc:black black_image.png
+```
+
+OVERLAY ALL IMAGES IN A DIRECTORY OVER THE SOLID COLOR PNG (ASSUMING IMAGES ARE NAMED image0.png ETC)
+```
+for i in {1..14}; do
+  convert black_image.png image${i}.png -composite output${i}.png
+done
+```
