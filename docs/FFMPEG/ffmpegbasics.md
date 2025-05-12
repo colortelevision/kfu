@@ -43,3 +43,4 @@ SPLIT A VIDEO INTO 2 PARTS
 ```bash
 ffmpeg -i input.mp4 -t 00:00:30 -c copy part1.mp4
 ffmpeg -i input.mp4 -ss 00:00:30 -c copy part2.mp4
+```
