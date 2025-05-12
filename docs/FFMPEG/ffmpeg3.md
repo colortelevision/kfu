@@ -52,3 +52,9 @@ REMOVE AUDIO FROM VIDEO
 ```bash
 ffmpeg -i input.mp4 -an output.mp4
 ```
+
+
+INTERPOLATE MP4
+```bash
+ffmpeg -i input.mp4 -filter_complex "[0:v]reverse[r];[0:v][r]concat=n=2:v=1[outv]" -map "[outv]" output.mp4
+```
