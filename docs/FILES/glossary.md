@@ -1,0 +1,103 @@
+---
+sidebar_position: 1
+---
+
+# GLOSSARY OF FILE-FUCKING SHIT
+
+## TERMS
+- **JUNCTIONS**: Directory reparse points in NTFS that link to another directory like a shortcut, but transparent to apps; can cause loops if not excluded.
+- **MULTI-THREADED**: Running multiple copy operations simultaneously using threads to speed up bulk file transfers on multi-core systems.
+- **TIMESTAMPS**: File metadata like creation time, last modified time, last access time; preserved during copies to maintain original dates.
+- **SUBDIRECTORIES**: Folders within folders; recursive operations traverse them.
+- **MIRROR**: Exact replication of source to destination, including deletions via purge, for sync backups.
+- **PURGES**: Deletion of destination files/folders absent from source during sync operations.
+- **ATTRIBUTES**: File flags like read-only, hidden, system, archive; can be copied or stripped.
+- **SOURCE**: Origin path for files/directories being copied/moved.
+- **VERBOSE**: Detailed output mode showing progress, errors, skipped files.
+- **DRY RUN**: Simulation mode that lists actions without executing them.
+- **LOG**: File output capturing command results, errors, summaries.
+- **SYMBOLIC LINK**: Soft link pointing to a file/directory; follows target if dereferenced.
+- **TOUCH**: Update file timestamps to current time without changing content.
+- **RECURSIVE**: Operation that processes subdirectories and their contents deeply.
+- **COUNTERS**: Variables in loops for numbering during bulk renames.
+- **PERMISSIONS**: NTFS ACLs defining user/group access rights; can be reset or inherited.
+- **HASHES**: Cryptographic checksums (e.g., SHA256) for verifying file integrity/duplicates.
+- **PROPERTY**: Object attribute in PowerShell, like Length for size or LastWriteTime.
+- **HARDLINKS**: Multiple directory entries pointing to the same file data; saves space, no duplication.
+- **STRUCTURE**: Directory tree hierarchy preserved during recursive copies.
+- **OVER NETWORK**: File operations across shares like \\server\path; prone to interruptions.
+- **RESTARTABLE MODE**: Copy mode that resumes interrupted transfers from partial files.
+
+## TOOLS
+- **robocopy**: Advanced file copier for mirroring, backups, with multi-thread, retry, logging.
+- **Copy-Item**: PowerShell cmdlet for recursive file/folder copies with force overwrite.
+- **Move-Item**: PowerShell cmdlet for relocating files/folders with overwrite.
+- **Remove-Item**: PowerShell cmdlet for deleting files/folders recursively with force.
+- **Get-ChildItem**: PowerShell cmdlet to list files/directories, filter by properties.
+- **Rename-Item**: PowerShell cmdlet for bulk renaming with script blocks.
+- **Get-FileHash**: PowerShell cmdlet to compute file hashes for integrity.
+- **Compress-Archive**: PowerShell cmdlet to zip folders without external tools.
+- **takeown**: CMD tool to seize file/folder ownership recursively.
+- **icacls**: CMD tool to manage NTFS permissions, reset to defaults.
+- **forfiles**: CMD tool to execute commands on files matching criteria like size/age.
+- **mklink**: CMD tool to create hard/symbolic links or junctions.
+- **xcopy**: Legacy CMD copier for directories with excludes, hidden files.
+- **attrib**: CMD tool to set/clear file attributes like read-only/hidden.
+
+## TOOL ARGS
+- **robocopy /MIR**: Mirrors source to dest, purges extras.
+- **robocopy /E**: Copies subdirs including empty.
+- **robocopy /S**: Copies subdirs excluding empty.
+- **robocopy /MOV**: Moves files, deletes source.
+- **robocopy /COPY:DAT**: Copies data, attributes, timestamps.
+- **robocopy /COPYALL**: Copies all info including security.
+- **robocopy /DCOPY:DAT**: Copies dir timestamps/attributes.
+- **robocopy /SEC**: Copies NTFS security.
+- **robocopy /XO**: Excludes older files.
+- **robocopy /MT[:n]**: Multi-threads with n threads.
+- **robocopy /R:n**: Retries n times.
+- **robocopy /W:n**: Waits n seconds between retries.
+- **robocopy /Z**: Restartable network mode.
+- **robocopy /XJ**: Excludes junctions.
+- **robocopy /XD dirs**: Excludes named dirs.
+- **robocopy /PURGE**: Purges dest extras.
+- **robocopy /L**: Dry run list only.
+- **robocopy /V**: Verbose logging.
+- **robocopy /LOG:file**: Logs to file.
+- **robocopy /LOG+:file**: Appends to log.
+- **Copy-Item -Recurse**: Copies subdirs.
+- **Copy-Item -Force**: Overwrites.
+- **Move-Item -Force**: Overwrites dest.
+- **Remove-Item -Recurse**: Deletes subdirs.
+- **Remove-Item -Force**: Deletes protected.
+- **Get-ChildItem -Recurse**: Lists subdirs.
+- **Get-ChildItem -File**: Files only.
+- **Get-ChildItem -Directory**: Dirs only.
+- **Rename-Item -NewName**: Sets new name.
+- **Get-FileHash -Algorithm**: Specifies hash type.
+- **Compress-Archive -Path**: Source paths.
+- **Compress-Archive -DestinationPath**: Zip output.
+- **Compress-Archive -CompressionLevel**: Compression mode.
+- **takeown /F**: Targets file/dir.
+- **takeown /R**: Recursive.
+- **takeown /D Y**: Defaults yes.
+- **icacls /reset**: Resets perms.
+- **icacls /T**: Applies to subitems.
+- **icacls /C**: Continues on errors.
+- **forfiles /S**: Recursive.
+- **forfiles /M**: Mask wildcard.
+- **forfiles /C**: Per-file command.
+- **mklink /H**: Hard link.
+- **mklink /D**: Dir symlink.
+- **mklink /J**: Junction.
+- **xcopy /E**: Copies subdirs empty.
+- **xcopy /H**: Hidden/system files.
+- **xcopy /C**: Continues errors.
+- **xcopy /I**: Assumes dir dest.
+- **xcopy /Y**: No overwrite prompt.
+- **xcopy /EXCLUDE:file**: Exclude list.
+- **attrib +R / -R**: Sets/clears read-only.
+- **attrib +H / -H**: Sets/clears hidden.
+- **attrib +S / -S**: Sets/clears system.
+- **attrib /S**: Subdirs.
+- **attrib /D**: Includes dirs.
