@@ -164,3 +164,8 @@ ditto -c -k --sequesterRsrc --keepParent "/bigfolder/" "/Volumes/bigfolder.zip"
 ```bash
 find "/photos/" -type f -exec shasum -a 256 {} \; | awk '{print $1}' | sort | uniq -d
 ```
+
+**EXTRACT PNG FROM CLIPBOARD**  
+```bash
+osascript -e 'get the clipboard as «class PNGf»' | sed 's/«data PNGf//; s/»//' | xxd -r -p > image.png
+```
